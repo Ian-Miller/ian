@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/one_search_input"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp" />
+
+    <include
+        android:id="@+id/one_content"
+        layout="@layout/one_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        app:layout_anchor="@id/one_search_input"
+        app:layout_anchorGravity="bottom"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/one_search"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="32dp"
+        android:clickable="true"
+        app:elevation="3dp"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_refresh_black_24dp"
+        app:backgroundTint="@color/colorAccent"
+        app:layout_anchor="@id/one_content"
+        app:layout_anchorGravity="bottom|end"/>
+
+    <include
+        android:id="@+id/one_search_zone_root"
+        layout="@layout/one_search_recyclerview"/>
+
+</android.support.design.widget.CoordinatorLayout>

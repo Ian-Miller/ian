@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ian="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ian.a.view.InfoView
+            android:id="@+id/two_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="1dp"
+            android:gravity="left|center"
+            android:padding="8dp"
+            android:text="TextView"
+            ian:layout_constraintLeft_toLeftOf="parent"
+            ian:layout_constraintRight_toRightOf="parent"
+            ian:layout_constraintTop_toTopOf="parent"
+            ian:layout_constraintHorizontal_bias="1.0" />
+
+        <ian.a.view.InfoView
+            android:id="@+id/two_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="left|center"
+            android:padding="8dp"
+            android:text="TextView"
+            ian:layout_constraintLeft_toLeftOf="parent"
+            ian:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="8dp"
+            ian:layout_constraintTop_toBottomOf="@+id/two_1" />
+
+        <ian.a.view.InfoView
+            android:id="@+id/two_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="left|center"
+            android:padding="8dp"
+            android:text="TextView"
+            ian:layout_constraintLeft_toLeftOf="parent"
+            ian:layout_constraintRight_toRightOf="parent"
+            ian:layout_constraintTop_toBottomOf="@+id/two_2"
+            ian:layout_constraintHorizontal_bias="0.0" />
+
+        <ian.a.view.InfoView
+            android:id="@+id/two_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="left|center"
+            android:padding="8dp"
+            android:text="TextView"
+            ian:layout_constraintLeft_toLeftOf="parent"
+            ian:layout_constraintRight_toRightOf="parent"
+            ian:layout_constraintTop_toBottomOf="@+id/two_3" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+</android.support.v4.widget.NestedScrollView>

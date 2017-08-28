@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportHeight="800"
+    android:viewportWidth="800">
+    <group android:name="flash screen">
+        <path
+            android:fillColor="@color/colorPrimaryDark"
+            android:pathData="M200 500 L425 200 599 485z" />
+        <path
+            android:fillColor="@color/colorPrimary"
+            android:pathData="M275 400 L541 390 470 600"/>
+    </group>
+
+</vector>
